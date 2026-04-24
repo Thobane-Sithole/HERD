@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HERD — Helping Environment and Resilient Development | Wonderkop, Marikana</title>
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="nav-drawer" id="navDrawer" aria-label="Mobile navigation">
+  <a href="#hero">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#programs">Our Programmes</a>
+  <a href="#projects">Projects</a>
+  <a href="#team">Our Team</a>
+  <a href="#articles">Articles</a>
+  <a href="#complaint">Contact</a>
+  <a href="donate.html" style="color:var(--accent);margin-top:12px;border:none">Donate Now →</a>
+</nav>
+
+<!-- NAVBAR -->
+<header id="navbar" role="banner">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="HERD - go to homepage">
+      <!-- <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+        <circle cx="19" cy="19" r="18" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <ellipse cx="19" cy="18" rx="9" ry="8" fill="rgba(255,255,255,0.85)"/>
+        <ellipse cx="11" cy="17" rx="4" ry="5" fill="rgba(255,255,255,0.6)"/>
+        <ellipse cx="27" cy="17" rx="4" ry="5" fill="rgba(255,255,255,0.6)"/>
+        <path d="M16 24 Q14 28 17 30 Q19 31 18 28" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <circle cx="16" cy="17" r="1.2" fill="#1a2e1f"/>
+        <circle cx="22" cy="17" r="1.2" fill="#1a2e1f"/>
+        <path d="M15 22 Q13 25 15 26" stroke="#D4A017" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <path d="M19 8 Q22 5 25 8 Q22 11 19 8Z" fill="#4A9B5F"/>
+        <path d="M19 8 Q16 5 13 8 Q16 11 19 8Z" fill="#2E6B3E"/>
+      </svg> -->
+      <span class="nav-logo-text">HERD</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#programs">Our Programmes</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#complaint">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="donate.html" class="btn btn-primary" style="padding:10px 22px;font-size:0.85rem">Donate</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" style="scroll-margin-top:var(--nav-height)" aria-labelledby="heroHeading">
+  <div class="hero-bg"></div>
+  <div class="hero-hills" aria-hidden="true">
+    <svg viewBox="0 0 1440 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="position:absolute;bottom:0;width:100%;height:100%">
+      <path d="M0 300 Q180 180 360 220 Q540 260 720 190 Q900 120 1080 200 Q1260 280 1440 180 L1440 300Z" fill="rgba(26,46,31,0.7)"/>
+      <path d="M0 300 Q200 220 400 250 Q600 280 800 220 Q1000 160 1200 240 Q1350 290 1440 250 L1440 300Z" fill="rgba(26,46,31,0.85)"/>
+      <path d="M0 300 L0 270 Q360 240 720 260 Q1080 280 1440 255 L1440 300Z" fill="#1A2E1F"/>
+    </svg>
+  </div>
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="leaf" style="left:8%;font-size:18px;animation-duration:11s;animation-delay:0s" aria-hidden="true">🍃</div>
+  <div class="leaf" style="left:22%;font-size:24px;animation-duration:14s;animation-delay:2s" aria-hidden="true">🌿</div>
+  <div class="leaf" style="left:55%;font-size:16px;animation-duration:9s;animation-delay:4s" aria-hidden="true">🍃</div>
+  <div class="leaf" style="left:72%;font-size:22px;animation-duration:13s;animation-delay:1s" aria-hidden="true">🌿</div>
+  <div class="leaf" style="left:88%;font-size:20px;animation-duration:10s;animation-delay:3s" aria-hidden="true">🍃</div>
+  <div class="leaf" style="left:40%;font-size:28px;animation-duration:16s;animation-delay:5s" aria-hidden="true">🌿</div>
+  <div class="hero-content">
+    <div class="hero-tag">Wonderkop, Marikana — North West Province, South Africa</div>
+    <h1 class="hero-title" id="heroHeading">
+      <span class="word"><em>Nurturing</em></span><span class="word"> </span><span class="word">Nature,</span>
+      <br>
+      <span class="word">Empowering</span><span class="word"> </span><span class="word">Communities</span>
+    </h1>
+    <p class="hero-sub">Helping Environment and Resilient Development — addressing environmental challenges while fostering community resilience in the heart of Wonderkop, Marikana.</p>
+    <div class="hero-btns">
+      <a href="#about" class="btn btn-outline">Partner With Us</a>
+      <a href="donate.html" class="btn btn-primary">Donate Now <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <p class="hero-reg">Reg No: 2024/661339/08 &nbsp;·&nbsp; Building Resilient Communities, Protecting Our Future</p>
+  </div>
+  <div class="scroll-arrow" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- STATS -->
+<section id="stats" aria-label="Key statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><span class="stat-icon">👥</span><span class="stat-num" data-target="45" data-suffix=".3%">0</span><span class="stat-label">SA Youth Unemployment</span></div>
+      <div class="stat-item reveal" style="transition-delay:.1s"><span class="stat-icon">🎓</span><span class="stat-num" data-target="4" data-suffix="">0</span><span class="stat-label">Core Programme Areas</span></div>
+      <div class="stat-item reveal" style="transition-delay:.2s"><span class="stat-icon">🔄</span><span class="stat-num" data-target="4" data-suffix="">0</span><span class="stat-label">HERD Strategy Pillars</span></div>
+      <div class="stat-item reveal" style="transition-delay:.3s"><span class="stat-icon">🌍</span><span class="stat-num" data-target="90" data-suffix="%">0</span><span class="stat-label">World's Platinum from SA</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="scroll-margin-top:var(--nav-height)" aria-labelledby="aboutH">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal-left">
+        <div class="leaf-div" aria-hidden="true">
+          <div class="leaf-div-line"></div>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" style="color:var(--primary-light)"><path d="M10 2C6 2 2 6 2 10c0 3 2 5.5 5 6.5V18h6v-1.5c3-1 5-3.5 5-6.5 0-4-4-8-8-8zm0 12c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"/></svg>
+          <div class="leaf-div-line" style="background:linear-gradient(90deg,rgba(46,107,62,0.25),transparent)"></div>
+        </div>
+        <span class="section-tag">Who We Are</span>
+        <h2 class="section-heading" id="aboutH">Welcome to HERD</h2>
+        <p>HERD — Helping Environment and Resilient Development — is a newly established Non-Profit Company (NPC) dedicated to addressing environmental challenges while fostering community resilience. HERD focuses on community development, environmental protection, and the promotion of sustainable practices.</p>
+        <p>In the heart of Wonderkop, a village nestled in Marikana — where brave mine workers lost their lives fighting for fair wages — HERD is weaving together environmental stewardship and community empowerment. Despite sitting atop one of the richest mineral belts in the world (South Africa produces 90% of the globe's platinum), the community continues to grapple with poverty, high unemployment, and inadequate infrastructure.</p>
+        <p>Recognising the deep scars left by the Marikana massacre, HERD stepped in to heal, uplift and ignite a sense of resilience and possibility for a brighter future — fostering dialogue and collaboration with various stakeholders.</p>
+        <a href="#programs" class="btn btn-green" style="margin-top:8px">Explore Our Programmes <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="about-card reveal-right">
+        <div class="about-card-badge">NPC · Reg: 2024/661339/08</div>
+        <div style="width:64px;height:64px;background:var(--cream);border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:24px" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 38 38" fill="none"><ellipse cx="19" cy="18" rx="9" ry="8" fill="#2E6B3E"/><ellipse cx="11" cy="17" rx="4" ry="5" fill="#4A9B5F"/><ellipse cx="27" cy="17" rx="4" ry="5" fill="#4A9B5F"/><path d="M16 24 Q14 28 17 30 Q19 31 18 28" stroke="#2E6B3E" stroke-width="2.5" stroke-linecap="round" fill="none"/><circle cx="16" cy="17" r="1.2" fill="white"/><circle cx="22" cy="17" r="1.2" fill="white"/><path d="M19 8 Q22 5 25 8 Q22 11 19 8Z" fill="#4A9B5F"/><path d="M19 8 Q16 5 13 8 Q16 11 19 8Z" fill="#2E6B3E"/></svg>
+        </div>
+        <blockquote class="about-card-quote">"We protect what we value. And we value what we know. Through knowledge we ignite a passion for the environment — and through passion, we inspire action to preserve and restore the world around us."</blockquote>
+        <div class="mini-stats">
+          <div class="mini-stat"><span class="n">4</span><span class="l">Board Members</span></div>
+          <div class="mini-stat"><span class="n">4</span><span class="l">Programmes</span></div>
+          <div class="mini-stat"><span class="n">100%</span><span class="l">Local Leadership</span></div>
+        </div>
+        <div class="about-card-footer">WONDERKOP, MARIKANA, NORTH WEST PROVINCE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION / MISSION -->
+<section id="vision">
+  <div class="container">
+    <div class="vm-grid">
+      <div class="vm-card v reveal-left">
+        <span class="tag">Our Vision</span>
+        <h3>A World in Harmony with Nature</h3>
+        <p>We envision a world where communities live in harmony with the environment, take proactive measures to restore ecosystems, and are equipped to thrive despite environmental challenges. Through environmental education, leadership development, and sustainable innovation, HERD aims to create resilient and empowered communities that lead the charge in protecting our planet for future generations.</p>
+      </div>
+      <div class="vm-card m reveal-right">
+        <span class="tag">Our Mission</span>
+        <h3>Empowering Communities for a Sustainable Future</h3>
+        <p>HERD is dedicated to creating a sustainable future by empowering communities with the knowledge, tools, and skills necessary to protect the environment and build resilience in the face of climate challenges. We believe in the power of education, community action, and innovation to foster environmental stewardship and promote sustainable livelihoods. Our approach integrates environmental protection with socioeconomic development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY -->
+<section id="strategy" aria-labelledby="stratH">
+  <div class="container">
+    <div class="strategy-inner">
+      <div class="reveal-left">
+        <span class="section-tag">How We Work</span>
+        <h2 class="section-heading" id="stratH">The HERD Cycle</h2>
+        <p class="section-sub">Our self-sustaining strategy transforms communities from dependence to independence through four interdependent pillars.</p>
+        <div class="step-list">
+          <div class="step-item">
+            <div class="step-num" style="background:rgba(30,111,168,0.15);color:#2980b9">1</div>
+            <div class="step-text"><strong>Develop</strong> — <span>Implement educational and healthcare projects that answer direct community needs.</span></div>
+          </div>
+          <div class="step-item">
+            <div class="step-num" style="background:rgba(224,120,32,0.15);color:#e07820">2</div>
+            <div class="step-text"><strong>Produce</strong> — <span>Give beneficiaries access to the economy through skills training and enterprise development.</span></div>
+          </div>
+          <div class="step-item">
+            <div class="step-num" style="background:rgba(124,58,237,0.15);color:#7c3aed">3</div>
+            <div class="step-text"><strong>Trade</strong> — <span>Within 12 months, ESD beneficiaries begin trading, earning a solid, self-sustaining income.</span></div>
+          </div>
+          <div class="step-item">
+            <div class="step-num" style="background:rgba(46,107,62,0.15);color:var(--primary)">4</div>
+            <div class="step-text"><strong>Reinvest</strong> — <span>Beneficiaries use their income to pay for healthcare, training, and education — reinvesting in their community.</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="strategy-cycle">
+          <div class="cycle-tile ct-develop"><h3>Develop</h3><p>Education &amp; healthcare projects for direct community needs</p></div>
+          <div class="cycle-tile ct-produce"><h3>Produce</h3><p>Skills training &amp; enterprise development for economic access</p></div>
+          <div class="cycle-tile ct-reinvest"><h3>Reinvest</h3><p>Community reinvests income into services &amp; growth</p></div>
+          <div class="cycle-tile ct-trade"><h3>Trade</h3><p>ESD participants trading within 12 months for solid income</p></div>
+        </div>
+        <p style="text-align:center;margin-top:16px;font-size:0.8rem;color:var(--text-muted);font-style:italic">A self-sustaining cycle of community transformation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTION CARDS -->
+<section id="actions" aria-label="Get involved">
+  <div class="container">
+    <div class="action-cards">
+      <a href="#programs" class="action-card reveal" style="transition-delay:0s">
+        <div class="ac-icon">🎯</div>
+        <h3>Join Our Programmes</h3>
+        <p>Participate in education workshops, skills development training, healthcare initiatives, and enterprise development in Wonderkop.</p>
+        <div class="ac-link">Explore Programmes <i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="#team" class="action-card reveal" style="transition-delay:.1s">
+        <div class="ac-icon">🤝</div>
+        <h3>Partner With Us</h3>
+        <p>Join our growing network of businesses, NGOs, and government agencies committed to building a resilient, self-sustaining Marikana.</p>
+        <div class="ac-link">Become a Partner <i class="fas fa-arrow-right"></i></div>
+      </a>
+      <a href="#complaint" class="action-card reveal" style="transition-delay:.2s">
+        <div class="ac-icon">💚</div>
+        <h3>Donate</h3>
+        <p>Every contribution fuels our mission to uplift communities and eradicate poverty among the historically disadvantaged of Marikana.</p>
+        <div class="ac-link">Support HERD <i class="fas fa-arrow-right"></i></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs" style="scroll-margin-top:var(--nav-height)" aria-labelledby="progH">
+  <div class="container">
+    <div class="prog-header reveal">
+      <span class="section-tag">What We Do</span>
+      <h2 class="section-heading" id="progH">Our Four Main Programmes</h2>
+      <div class="divider-line"></div>
+      <p class="section-sub">Four pillars of community transformation — rooted in the lived realities of Wonderkop and Marikana.</p>
+    </div>
+    <div class="programs-grid">
+      <div class="prog-card reveal" style="transition-delay:0s;border-left-color:#2E6B3E">
+        <span class="prog-icon">🎓</span>
+        <h3>Education</h3>
+        <ul>
+          <li>Community workshops on climate change, global warming, water conservation &amp; biodiversity</li>
+          <li>Environmental toolkits for schools, NGOs &amp; community groups</li>
+          <li>School outreach with interactive learning, field trips &amp; eco-club establishment</li>
+          <li>Environmental education integrated into school curricula</li>
+        </ul>
+        <a href="#" class="prog-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="prog-card reveal" style="transition-delay:.1s;border-left-color:#4A9B5F">
+        <span class="prog-icon">⚙️</span>
+        <h3>Skills Development</h3>
+        <ul>
+          <li>Youth training in Education, IT, Fashion &amp; Design, and Agriculture</li>
+          <li>Eco-cleanup campaigns: waste reduction, recycling &amp; upcycling</li>
+          <li>Community green spaces, gardens &amp; urban agriculture projects</li>
+          <li>Eco-leadership mentoring &amp; youth-led conservation projects</li>
+          <li>Eco-internships with environmental organisations &amp; green businesses</li>
+        </ul>
+        <a href="#" class="prog-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="prog-card reveal" style="transition-delay:.2s;border-left-color:#D4A017">
+        <span class="prog-icon">🏥</span>
+        <h3>Healthcare</h3>
+        <ul>
+          <li>Primary Healthcare Clinics for project beneficiaries &amp; communities</li>
+          <li>Mother &amp; child, dental, HIV/AIDS and TB services</li>
+          <li>General health and wellness programmes</li>
+        </ul>
+        <a href="#" class="prog-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="prog-card reveal" style="transition-delay:.3s;border-left-color:#7c3aed">
+        <span class="prog-icon">🌱</span>
+        <h3>Enterprise &amp; Supplier Development (ESD)</h3>
+        <ul>
+          <li>Green business incubation: waste reduction, clean energy &amp; eco-tourism</li>
+          <li>Micro-grants for sustainable business startups via financial partners</li>
+          <li>Mentorship &amp; networking within the green economy sector</li>
+          <li>Community business hubs with employment, incubation &amp; small business development</li>
+        </ul>
+        <a href="#" class="prog-link">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="context-callout reveal" style="margin-top:48px">
+      <h4>Why Youth Skills Development Matters — Stats SA 2024</h4>
+      <div class="ctx-stats">
+        <div class="ctx-stat"><span class="big">45.3%</span><span class="desc">of all South African youth (18–35) is unemployed</span></div>
+        <div class="ctx-stat"><span class="big">39.4%</span><span class="desc">are Black and historically disadvantaged</span></div>
+        <div class="ctx-stat"><span class="big">46.3%</span><span class="desc">of youth job seekers have not completed high school</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENVIRONMENT -->
+<section id="environment" aria-labelledby="envH">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto">
+      <span class="section-tag">The Challenge</span>
+      <h2 class="section-heading" id="envH">Environmental Realities of Marikana</h2>
+      <p class="section-sub" style="margin:0 auto">Despite immense mineral wealth beneath the surface, Wonderkop faces serious environmental hazards that HERD is working to address.</p>
+    </div>
+    <div class="env-issues">
+      <div class="env-card reveal" style="transition-delay:0s"><div class="env-thumb env-water">💧</div><div class="env-body"><h4>Water Shortage</h4><p>Community members face acute water scarcity, often forced to source water from unsafe mine-adjacent sources.</p></div></div>
+      <div class="env-card reveal" style="transition-delay:.07s"><div class="env-thumb env-air">🏭</div><div class="env-body"><h4>Air Pollution</h4><p>Smelters and mining operations release pollutants that degrade air quality and cause respiratory health issues.</p></div></div>
+      <div class="env-card reveal" style="transition-delay:.14s"><div class="env-thumb env-dust">🌬️</div><div class="env-body"><h4>Dust Management</h4><p>Mine-related dust affects visibility, livestock, crops, and the health of Wonderkop's residents.</p></div></div>
+      <div class="env-card reveal" style="transition-delay:.21s"><div class="env-thumb env-waste">♻️</div><div class="env-body"><h4>Environmental Pollution</h4><p>Improper waste disposal and lack of sanitation infrastructure contribute to widespread environmental degradation.</p></div></div>
+      <div class="env-card reveal" style="transition-delay:.28s"><div class="env-thumb env-climate">🌡️</div><div class="env-body"><h4>Climate Change</h4><p>Shifting rainfall patterns and increasing temperatures threaten food security and agricultural livelihoods.</p></div></div>
+      <div class="env-card reveal" style="transition-delay:.35s"><div class="env-thumb env-tailings">⚠️</div><div class="env-body"><h4>Tailings Dam Safety</h4><p>Mining tailings dams pose ongoing safety risks to the community, requiring active monitoring and management.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="scroll-margin-top:var(--nav-height)" aria-labelledby="projH">
+  <div class="container">
+    <div class="proj-inner">
+      <div class="reveal-left">
+        <div class="proj-img">
+          <div class="proj-img-inner" role="img" aria-label="HERD community projects in Wonderkop">
+            <p class="proj-img-label">Roots in the<br>red soil of Marikana</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-tag">Our Work in Action</span>
+        <h2 class="section-heading" id="projH">Active Projects</h2>
+        <p class="section-sub">From youth leadership councils to healing community gardens, our projects address the most pressing needs of Wonderkop.</p>
+        <ul class="checklist" id="checklist">
+          <li class="checklist-item"><span class="check-icon"><i class="fas fa-check" aria-hidden="true"></i></span>Governance &amp; Youth Leadership Training</li>
+          <li class="checklist-item"><span class="check-icon"><i class="fas fa-check" aria-hidden="true"></i></span>Environmental Protection &amp; Restoration</li>
+          <li class="checklist-item"><span class="check-icon"><i class="fas fa-check" aria-hidden="true"></i></span>Primary Community Healthcare Access</li>
+          <li class="checklist-item"><span class="check-icon"><i class="fas fa-check" aria-hidden="true"></i></span>Community Gardening &amp; Food Security</li>
+          <li class="checklist-item"><span class="check-icon"><i class="fas fa-check" aria-hidden="true"></i></span>Green Business Incubation (ESD)</li>
+          <li class="checklist-item"><span class="check-icon"><i class="fas fa-check" aria-hidden="true"></i></span>Eco-Leadership &amp; Youth Internship Programmes</li>
+        </ul>
+        <a href="#" class="btn btn-green">View All Projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" style="scroll-margin-top:var(--nav-height)" aria-labelledby="teamH">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:580px;margin:0 auto 64px">
+      <span class="section-tag">People Behind HERD</span>
+      <h2 class="section-heading" id="teamH">Meet the Team</h2>
+      <div class="divider-line"></div>
+      <p class="section-sub" style="margin:0 auto">Developing lives is in our team's DNA — led entirely by local people who know and love their community.</p>
+    </div>
+    <div class="team-grid">
+      <!-- Brown -->
+      <div class="team-card reveal" style="transition-delay:0s">
+        <div class="team-card-hdr" style="background:linear-gradient(135deg,var(--primary),var(--primary-light))">
+          <div class="team-avatar">GB</div>
+          <div class="team-hdr-info"><h3>Gomotsegang Brown Matloko</h3><span class="team-role">Chairperson</span></div>
+        </div>
+        <div class="team-body">
+          <p>A dedicated professional specialising in Occupational Health, Safety, and Environmental Management with over 14 years of expertise as an HSE Officer at Bongekile Contractors. He has worked extensively under the Mine Health and Safety Act and the Occupational Health and Safety Act.</p>
+          <p>In 2023, Brown extended his commitment to the community through Benchmark Foundations, focusing on addressing the impact of mining activities on local populations — creating awareness and developing sustainable practices for both the environment and the people of Marikana.</p>
+          <div class="team-contact"><i class="fas fa-envelope"></i> gomotsegangbrown@hotmail.com &nbsp;·&nbsp; 065 186 0954</div>
+        </div>
+      </div>
+      <!-- Tumelo -->
+      <div class="team-card reveal" style="transition-delay:.1s">
+        <div class="team-card-hdr" style="background:linear-gradient(135deg,#1A2E1F,#2a4a32)">
+          <div class="team-avatar" style="background:rgba(212,160,23,0.2);border-color:rgba(212,160,23,0.4)">TC</div>
+          <div class="team-hdr-info"><h3>Tumelo Chongo</h3><span class="team-role">Secretary &amp; Co-Founder</span></div>
+        </div>
+        <div class="team-body">
+          <p>Born and raised in Wonderkop, Tumelo is a passionate advocate for education and community development. Despite financial setbacks while studying Electrical Engineering at TUT, he founded an internet café and tutoring company, Thuto tsa Matlhale, providing free classes to learners in need.</p>
+          <p>Currently studying Clinical Engineering at TUT, Tumelo co-founded HERD to ensure the struggles he once faced — financial difficulties and lack of opportunity — do not continue to hinder the next generation of Wonderkop. He is also the newly elected Chairman of Madeira Isles TUT residents.</p>
+          <div class="team-contact"><i class="fas fa-envelope"></i> Tsutsuma123@gmail.com &nbsp;·&nbsp; 064 604 8818</div>
+        </div>
+      </div>
+      <!-- Othelia -->
+      <div class="team-card reveal" style="transition-delay:.2s">
+        <div class="team-card-hdr" style="background:linear-gradient(135deg,#5a2d82,#7c3aed)">
+          <div class="team-avatar">OS</div>
+          <div class="team-hdr-info"><h3>Othelia Letlhogonolo Sello</h3><span class="team-role">Treasurer</span></div>
+        </div>
+        <div class="team-body">
+          <p>Othelia graduated from Rabboni Christian School in 2022 and in 2024 embraced a new chapter by joining the Bapo Ba Mogale Youth Organization (B.B.M.Y.O.) — an initiative to bring transformative opportunities to local youth. As Secretary of B.B.M.Y.O., she manages timelines, maintains order, and ensures commitments are delivered effectively.</p>
+          <p>Driven by a deep passion for youth empowerment, Othelia believes B.B.M.Y.O. is more than an organisation — it's a catalyst for change, committed to transforming the lives of Bapo Ba Mogale Youth.</p>
+          <div class="team-contact"><i class="fas fa-envelope"></i> Othelialetlhogonolo86@gmail.com &nbsp;·&nbsp; 071 127 1058</div>
+        </div>
+      </div>
+      <!-- Koketso -->
+      <div class="team-card reveal" style="transition-delay:.3s">
+        <div class="team-card-hdr" style="background:linear-gradient(135deg,#8b5e3c,#c49070)">
+          <div class="team-avatar">KS</div>
+          <div class="team-hdr-info"><h3>Koketso Sibanda</h3><span class="team-role">Deputy Chairperson</span></div>
+        </div>
+        <div class="team-body">
+          <p>The Wonderkop Youth Leader, Koketso completed matric at Johane Mokolobetsi Secondary School in 2018 and has pursued training in Basic Electrical Skills, Health &amp; Safety, Fire Fighting, and Leadership. He spearheads community development initiatives, mentors young individuals, and advocates for youth empowerment and education.</p>
+          <p>His efforts have led to increased youth participation in local governance, successful skills workshops, and strengthened community ties. His motto: <em>"Empowering today's youth for a brighter tomorrow."</em></p>
+          <div class="team-contact"><i class="fas fa-envelope"></i> Koketsosibanda6@gmail.com &nbsp;·&nbsp; 065 663 4265</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOVERNANCE / BOARD TABLE -->
+<section id="governance" style="scroll-margin-top:var(--nav-height)" aria-labelledby="govH">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto 48px">
+      <span class="section-tag">Structure &amp; Accountability</span>
+      <h2 class="section-heading" id="govH">Board of Directors</h2>
+      <div class="divider-line"></div>
+      <p class="section-sub" style="margin:0 auto">HERD is governed entirely by local community members who know and relate to our beneficiaries — setting strategy and ensuring accountability.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Name</th><th>Position</th><th>Gender</th><th>Contact</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Tumelo Chongo</strong></td><td><span class="role-badge" style="background:rgba(46,107,62,0.1);color:var(--primary)">Secretary</span></td><td>Male</td><td>064 604 8818</td><td>Tsutsuma123@gmail.com</td></tr>
+          <tr><td><strong>Brown Matloko</strong></td><td><span class="role-badge" style="background:rgba(212,160,23,0.12);color:#a07010">Chairperson</span></td><td>Male</td><td>065 186 0954</td><td>gomotsegangbrown@hotmail.com</td></tr>
+          <tr><td><strong>Othelia Sello</strong></td><td><span class="role-badge" style="background:rgba(124,58,237,0.1);color:#7c3aed">Treasurer</span></td><td>Female</td><td>071 127 1058</td><td>Othelialetlhogonolo86@gmail.com</td></tr>
+          <tr><td><strong>Koketso Sibanda</strong></td><td><span class="role-badge" style="background:rgba(139,94,60,0.1);color:#8b5e3c">Deputy Chairperson</span></td><td>Male</td><td>065 663 4265</td><td>Koketsosibanda6@gmail.com</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLAINT -->
+<section id="complaint" style="scroll-margin-top:var(--nav-height)" aria-labelledby="complaintH">
+  <div class="container">
+    <div class="complaint-card reveal">
+      <div class="complaint-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></div>
+      <div class="complaint-body">
+        <h3 id="complaintH">Lodge a Complaint</h3>
+        <p>We take community concerns seriously. If you have experienced an issue relating to our programmes, staff conduct, environmental matters, or community governance in Wonderkop, please submit a complaint. All reports are handled confidentially and with care.</p>
+        <button class="btn btn-primary" id="openModal" aria-haspopup="dialog">Submit Complaint <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close dialog"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <h3 id="modalTitle">Submit a Complaint</h3>
+    <p class="modal-sub">All information is treated with strict confidentiality.</p>
+    <div>
+      <div class="form-row">
+        <div class="form-group"><label for="f-name">Full Name</label><input type="text" id="f-name" placeholder="Your name" autocomplete="name"></div>
+        <div class="form-group"><label for="f-email">Email Address</label><input type="email" id="f-email" placeholder="your@email.com" autocomplete="email"></div>
+      </div>
+      <div class="form-group">
+        <label for="f-cat">Category</label>
+        <select id="f-cat"><option value="" disabled selected>Select a category</option><option>Programme Conduct</option><option>Staff Behaviour</option><option>Environmental Issue</option><option>Resource Misuse</option><option>Community Governance</option><option>Other</option></select>
+      </div>
+      <div class="form-group"><label for="f-msg">Your Message</label><textarea id="f-msg" placeholder="Describe the issue in detail..."></textarea></div>
+      <button class="btn btn-green" style="width:100%;justify-content:center" onclick="handleSubmit()">Submit Complaint <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLES -->
+<section id="articles" style="scroll-margin-top:var(--nav-height)" aria-labelledby="articlesH">
+  <div class="container">
+    <div class="articles-hdr">
+      <div><span class="section-tag">From the Field</span><h2 class="section-heading" id="articlesH">Latest Articles</h2></div>
+      <a href="#" class="btn btn-green">View All Articles</a>
+    </div>
+    <div class="articles-grid">
+      <div class="article-card reveal" style="transition-delay:0s">
+        <div class="article-img"><div class="article-img-inner ai1" role="img" aria-label="Tree planting community initiative"></div></div>
+        <div class="article-body">
+          <span class="article-tag">Environment</span>
+          <h3>Planting Trees: A Step-by-Step Community Guide</h3>
+          <p>How HERD's volunteer-led tree-planting drives are reshaping the landscape of Wonderkop — one sapling, one family, one future at a time.</p>
+          <div class="article-meta"><span class="article-date"><i class="fas fa-calendar-alt"></i> March 2025</span><a href="#" class="article-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+      <div class="article-card reveal" style="transition-delay:.1s">
+        <div class="article-img"><div class="article-img-inner ai2" role="img" aria-label="Youth empowerment in Marikana"></div></div>
+        <div class="article-body">
+          <span class="article-tag">Youth</span>
+          <h3>Empowering Youth in Rural Communities</h3>
+          <p>Meet the young leaders of Marikana transforming their community through HERD's skills development and leadership programmes.</p>
+          <div class="article-meta"><span class="article-date"><i class="fas fa-calendar-alt"></i> February 2025</span><a href="#" class="article-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+      <div class="article-card reveal" style="transition-delay:.2s">
+        <div class="article-img"><div class="article-img-inner ai3" role="img" aria-label="Environmental awareness in schools"></div></div>
+        <div class="article-body">
+          <span class="article-tag">Education</span>
+          <h3>Environmental Awareness in Schools</h3>
+          <p>HERD's school outreach programme is helping learners from Grade 4 to 12 connect with their ecological identity and inspire real action.</p>
+          <div class="article-meta"><span class="article-date"><i class="fas fa-calendar-alt"></i> January 2025</span><a href="#" class="article-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOALS -->
+<section id="goals" aria-labelledby="goalsH">
+  <div class="container">
+    <div class="goals-hdr reveal">
+      <span class="section-tag" style="color:var(--accent)">Why We Exist</span>
+      <h2 class="section-heading" id="goalsH">Our Purpose &amp; Impact Goals</h2>
+      <p class="section-sub">This platform connects, inspires, and mobilises those who believe in a resilient, self-sustaining Marikana.</p>
+    </div>
+    <div class="goals-grid">
+      <div class="goal-tile reveal" style="transition-delay:0s"><div class="goal-check"><i class="fas fa-check"></i></div><span>Attract Funding &amp; Grants</span></div>
+      <div class="goal-tile reveal" style="transition-delay:.05s"><div class="goal-check"><i class="fas fa-check"></i></div><span>Build Credibility &amp; Trust</span></div>
+      <div class="goal-tile reveal" style="transition-delay:.1s"><div class="goal-check"><i class="fas fa-check"></i></div><span>Recruit Youth Volunteers</span></div>
+      <div class="goal-tile reveal" style="transition-delay:.15s"><div class="goal-check"><i class="fas fa-check"></i></div><span>Connect with Partners &amp; Stakeholders</span></div>
+      <div class="goal-tile reveal" style="transition-delay:.2s"><div class="goal-check"><i class="fas fa-check"></i></div><span>Showcase Community Impact</span></div>
+      <div class="goal-tile reveal" style="transition-delay:.25s"><div class="goal-check"><i class="fas fa-check"></i></div><span>Foster Long-Term Community Resilience</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo" style="gap:10px;text-decoration:none;display:inline-flex;align-items:center" aria-label="HERD homepage">
+          <svg width="36" height="36" viewBox="0 0 38 38" fill="none" aria-hidden="true"><ellipse cx="19" cy="18" rx="9" ry="8" fill="#4A9B5F"/><ellipse cx="11" cy="17" rx="4" ry="5" fill="#2E6B3E"/><ellipse cx="27" cy="17" rx="4" ry="5" fill="#2E6B3E"/><path d="M16 24 Q14 28 17 30 Q19 31 18 28" stroke="#4A9B5F" stroke-width="2.5" stroke-linecap="round" fill="none"/><circle cx="16" cy="17" r="1.2" fill="white"/><circle cx="22" cy="17" r="1.2" fill="white"/><path d="M19 8 Q22 5 25 8 Q22 11 19 8Z" fill="#D4A017"/><path d="M19 8 Q16 5 13 8 Q16 11 19 8Z" fill="#E8B82A"/></svg>
+          <span style="font-family:var(--font-display);font-weight:700;font-size:1.5rem;color:var(--white);letter-spacing:0.04em">HERD</span>
+        </a>
+        <p>Helping Environment and Resilient Development — building resilient communities, protecting our future. Reg: 2024/661339/08</p>
+        <div class="social-row" role="list">
+          <a href="#" class="social-btn" aria-label="HERD on Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="HERD on X/Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-btn" aria-label="HERD on Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="HERD on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#strategy">Our Strategy</a></li>
+          <li><a href="#programs">Programmes</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#articles">Articles</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Programmes</h4>
+        <ul>
+          <li><a href="#programs">Education</a></li>
+          <li><a href="#programs">Skills Development</a></li>
+          <li><a href="#programs">Healthcare</a></li>
+          <li><a href="#programs">Enterprise Development (ESD)</a></li>
+          <li><a href="#projects">Youth Leadership</a></li>
+          <li><a href="#environment">Environmental Work</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="fc-item"><i class="fas fa-map-marker-alt"></i><span>Wonderkop, Marikana, North West Province, South Africa</span></div>
+        <div class="fc-item"><i class="fas fa-envelope"></i><span>Tsutsuma123@gmail.com</span></div>
+        <div class="fc-item"><i class="fas fa-phone"></i><span>064 604 8818 (Tumelo Chongo)</span></div>
+        <div class="fc-item"><i class="fas fa-id-card"></i><span>Reg No: 2024/661339/08</span></div>
+        <a href="donate.html" class="btn btn-primary" style="margin-top:16px;padding:10px 20px;font-size:0.85rem">Donate Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 HERD — K2024661339 (NPC). All rights reserved.</p>
+      <span>Designed with 💚 for Marikana</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
